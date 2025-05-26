@@ -3,16 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace s28482_OstatnieZadaniePunktowane.Models;
 
-
-[Table(nameof(Patient))]
-public class Patient
+[Table(nameof(Doctor))]
+public class Doctor
 {
     [Key]
-    public int IdPatient { get; set;}
+    public int IdDoctor { get; set;}
     [MaxLength(100)]
     public string FirstName { get; set; } = null!;
     [MaxLength(100)]
     public string LastName { get; set; } = null!;
-    public DateTime BirthDate { get; set; }
+    [MaxLength(100)]
+    public string Email { get; set; } = null!;
     public virtual ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();
 }
