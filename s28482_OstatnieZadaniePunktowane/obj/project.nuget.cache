@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1WRv4B9vBTU=",
+  "dgSpecHash": "S6draj+7ovg=",
   "success": true,
-  "projectFilePath": "C:\\VI_sem\\APBD\\OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj",
+  "projectFilePath": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hrzem\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\hrzem\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

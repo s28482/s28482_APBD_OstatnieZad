@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\VI_sem\\APBD\\OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj": {}
+    "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj": {}
   },
   "projects": {
-    "C:\\VI_sem\\APBD\\OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj": {
+    "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VI_sem\\APBD\\OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj",
+        "projectUniqueName": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj",
         "projectName": "s28482_OstatnieZadaniePunktowane",
-        "projectPath": "C:\\VI_sem\\APBD\\OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj",
+        "projectPath": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj",
         "packagesPath": "C:\\Users\\hrzem\\.nuget\\packages\\",
-        "outputPath": "C:\\VI_sem\\APBD\\OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane\\obj\\",
+        "outputPath": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hrzem\\AppData\\Roaming\\NuGet\\NuGet.Config"

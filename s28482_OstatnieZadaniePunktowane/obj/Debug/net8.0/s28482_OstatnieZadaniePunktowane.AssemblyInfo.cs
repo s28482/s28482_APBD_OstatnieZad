@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("s28482_OstatnieZadaniePunktowane")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89e15e14b551de34d8777d7ea9ef58ba2168f228")]
 [assembly: System.Reflection.AssemblyProductAttribute("s28482_OstatnieZadaniePunktowane")]
 [assembly: System.Reflection.AssemblyTitleAttribute("s28482_OstatnieZadaniePunktowane")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
