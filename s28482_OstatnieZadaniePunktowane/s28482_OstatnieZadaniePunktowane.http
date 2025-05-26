@@ -1,0 +1,6 @@
+@s28482_OstatnieZadaniePunktowane_HostAddress = http://localhost:5110
+
+GET {{s28482_OstatnieZadaniePunktowane_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
