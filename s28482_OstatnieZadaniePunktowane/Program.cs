@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using s28482_OstatnieZadaniePunktowane.Data;
+using s28482_OstatnieZadaniePunktowane.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
     
 
 // DODAC WSTYDZYKIWANIE ZALEŻNOŚCI
-//builder.Services.AddScoped<IDbService, DbService>();
+builder.Services.AddScoped<IDbService, DbService>();
 
 var app = builder.Build();
 

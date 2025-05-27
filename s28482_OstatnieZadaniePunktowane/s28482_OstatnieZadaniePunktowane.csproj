@@ -17,14 +17,17 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
-      <Folder Include="DTOs\" />
       <Folder Include="Exceptions\" />
-      <Folder Include="Services\" />
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Tests\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="Tests\obj\s28482_OstatnieZadaniePunktowane.Tests.csproj.nuget.dgspec.json" />
     </ItemGroup>
 
 </Project>

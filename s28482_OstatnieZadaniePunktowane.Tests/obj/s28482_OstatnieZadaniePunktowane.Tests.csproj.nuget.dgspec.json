@@ -1,0 +1,191 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane.Tests\\s28482_OstatnieZadaniePunktowane.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane.Tests\\s28482_OstatnieZadaniePunktowane.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane.Tests\\s28482_OstatnieZadaniePunktowane.Tests.csproj",
+        "projectName": "s28482_OstatnieZadaniePunktowane.Tests",
+        "projectPath": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane.Tests\\s28482_OstatnieZadaniePunktowane.Tests.csproj",
+        "packagesPath": "C:\\Users\\hrzem\\.nuget\\packages\\",
+        "outputPath": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hrzem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj": {
+                "projectPath": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj",
+        "projectName": "s28482_OstatnieZadaniePunktowane",
+        "projectPath": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\s28482_OstatnieZadaniePunktowane.csproj",
+        "packagesPath": "C:\\Users\\hrzem\\.nuget\\packages\\",
+        "outputPath": "C:\\VI_sem\\APBD\\apbdOSTATNIE\\s28482_APBD_OstatnieZad\\s28482_OstatnieZadaniePunktowane\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hrzem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
