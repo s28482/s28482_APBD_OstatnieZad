@@ -179,4 +179,41 @@ public class DbServiceTests
             var ex = await Assert.ThrowsAsync<Exception>(() => service.AddPrescriptionAsync(dto));
             Assert.Contains("Nie znaleziono leków", ex.Message); // oczekujemy odpowiedniego komunikatu
         }
+        
+        [Fact]
+        public async Task GetPatientDetails_ReturnsCorrectData()
+        {
+            // Arrange
+            var db = GetInMemoryDbContext();
+            db.Patients.Add(new Patient { IdPatient = 1, FirstName = "Jan", LastName = "Nowak", BirthDate = new DateTime(1990, 1, 1) });
+            db.Doctors.Add(new Doctor { IdDoctor = 1, FirstName = "Adam", LastName = "Adamski", Email = "adam@med.com" });
+            db.Medicaments.Add(new Medicament { IdMedicament = 1, Name = "AAA", Description = "Desc", Type = "Tabletka" });
+
+            var prescription = new Prescription
+            {
+                IdPrescription = 1,
+                Date = new DateTime(2024, 1, 1),
+                DueDate = new DateTime(2024, 1, 5),
+                IdDoctor = 1,
+                IdPatient = 1,
+                PrescriptionMedicaments = new List<PrescriptionMedicament>
+                {
+                    new PrescriptionMedicament { IdMedicament = 1, Dose = 10, Details = "AAA" }
+                }
+            };
+
+            db.Prescriptions.Add(prescription);
+            db.SaveChanges();
+
+            var service = new DbService(db);
+
+            // Act
+            var result = await service.GetPatientDetailsAsync(1);
+
+            // Assert
+            Assert.Equal("Jan", result.FirstName);
+            Assert.Single(result.Prescriptions);
+            Assert.Single(result.Prescriptions.First().Medicaments);
+        }
+
     }

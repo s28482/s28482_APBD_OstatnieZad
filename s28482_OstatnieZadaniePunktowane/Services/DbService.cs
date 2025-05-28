@@ -9,6 +9,7 @@ namespace s28482_OstatnieZadaniePunktowane.Services;
 public interface IDbService
 {
     public Task AddPrescriptionAsync(PrescriptionCreateRequestDTO dto, int doctorId = 1);
+    public Task<PatientDetailsDTO> GetPatientDetailsAsync(int id);
 }
 
 public class DbService(AppDbContext data) : IDbService
@@ -83,5 +84,54 @@ public class DbService(AppDbContext data) : IDbService
         data.Prescriptions.Add(prescription);
         await data.SaveChangesAsync();
     }
+    
+    
+    // Asynchroniczna metoda, która zwraca dane szczegółowe pacjenta na podstawie jego ID
+    public async Task<PatientDetailsDTO> GetPatientDetailsAsync(int id) 
+{
+    var patient = await data.Patients 
+        .Include(p => p.Prescriptions) // Ładujemy również przypisane do pacjenta recepty
+        .ThenInclude(pr => pr.Doctor) // Dla każdej recepty pobieramy również lekarza, który ją wystawił
+        .Include(p => p.Prescriptions) // Ponownie ładujemy recepty
+        .ThenInclude(pr => pr.PrescriptionMedicaments) // Do każdej recepty pobieramy przypisane leki
+        .ThenInclude(pm => pm.Medicament) // Dla każdego wpisu w tabeli pośredniczącej ładujemy szczegóły leku
+        .FirstOrDefaultAsync(p => p.IdPatient == id); // Filtrujemy pacjenta po ID 
+
+    if (patient == null) // Jeśli pacjent nie istnieje, rzucamy wyjątek
+        throw new Exception("Nie znaleziono pacjenta");
+
+    return new PatientDetailsDTO // Tworzymy DTO z danymi pacjenta
+    {
+        IdPatient = patient.IdPatient, 
+        FirstName = patient.FirstName, 
+        LastName = patient.LastName, 
+        BirthDate = patient.BirthDate, 
+        Prescriptions = patient.Prescriptions // Lista recept przypisanych do pacjenta
+            // "Dane na temat recept powinny być posortowane po polu DueDate."
+            .OrderBy(p => p.DueDate) // Sortujemy recepty po dacie ważności (rosnąco)
+            .Select(p => new PrescriptionDetailsDTO 
+            {
+                IdPrescription = p.IdPrescription, 
+                Date = p.Date, 
+                DueDate = p.DueDate, 
+                Doctor = new DoctorDTO // Tworzymy obiekt DTO dla lekarza
+                {
+                    IdDoctor = p.Doctor.IdDoctor, 
+                    FirstName = p.Doctor.FirstName, 
+                    LastName = p.Doctor.LastName, 
+                    Email = p.Doctor.Email 
+                },
+                Medicaments = p.PrescriptionMedicaments.Select(pm => new MedicamentDTO 
+                {
+                    IdMedicament = pm.Medicament.IdMedicament, 
+                    Name = pm.Medicament.Name, 
+                    Description = pm.Medicament.Description, 
+                    Type = pm.Medicament.Type, 
+                    Dose = pm.Dose, 
+                    Details = pm.Details 
+                }).ToList() // Konwertujemy na listę
+            }).ToList() // Konwertujemy wszystkie recepty na listę
+    };
+}
     
 }
